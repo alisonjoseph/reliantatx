@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .top-header{
-	background: #fff !important;
+	background: #1d3649 !important;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
@@ -38,22 +38,53 @@ ul.nav{
 }
 .navbar-default .navbar-nav>li>a {
  	font-size: 24px;
-	color: #000;
+	color: #fff;
 	text-transform: uppercase;
 	transition: all .7s ease 0s;
 	padding: 14px 15px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color: #999;
+	color: #42b3e5;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #000;
 }
 li a.active{
 	color: #42b3e5 !important;
+	cursor: default;
 }
 .navbar-default .navbar-toggle {
   border-color: #fff;
   margin-top: 4px;
+}
+
+
+.header-logo {
+	svg {
+		width: 110px;
+		height: auto;
+		fill: white;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	.header-info {
+		position: relative;;
+		top: -20px;
+		display: inline-block;
+		color: white;
+	}
+
+	.header-phone {
+		display: block;
+		font-size: 20px;
+	}
+
+	.header-location {
+		display: block;;
+	}
 }
