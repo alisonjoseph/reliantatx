@@ -1,0 +1,22 @@
+// ==========================================================================
+// Mixins
+//
+//
+// ==========================================================================
+
+
+// Media Queries
+//
+// ============
+@mixin breakpoint($class) {
+  @if $class == tablet {
+    @media (min-width: 31.250em) { @content; } //500px
+  }
+  @if $class == desktop {
+     @media (min-width: 48.063em) { @content; } //768px
+  }
+
+  @if $class == large-desktop {
+    @media (min-width: 100em) { @content; } //1600px
+  }
+}

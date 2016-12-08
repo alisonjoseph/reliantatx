@@ -1,0 +1,44 @@
+
+/*service area*/
+.service{
+	background: url(../img/pattern.jpg);
+	background-repeat: repeat-y;
+	margin-top: 40px;
+}
+.service h2{
+	font-size: 90px;
+	color: #fff;
+	margin-top: 70px;
+	margin-bottom: 0;
+}
+.service h4{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 70px;
+	display: block;
+}
+.single-service{
+	text-align:center;
+}
+.single-service-img {
+  width: 205px;
+  height: 125px;
+  padding-left:30px;
+  position: relative;
+}
+.service-img {
+  width: 205px;
+  height: 125px;
+  background: #3a9ecb;
+  position: relative;
+}
+.single-service h3{
+	margin-top: 10px;
+	color: #fff;
+	padding-bottom: 50px;
+	position:relative;
+}
+.service-img img{
+	position: absolute;
+}

@@ -1,0 +1,59 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.top-header{
+	background: #fff !important;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+}
+.header-backup{
+	width: 20px;
+	height: 119px;
+	background: transparent;
+	margin:auto;
+}
+.top-header img.logo{
+	margin-bottom: 15px;
+	margin-top: 0;
+	transition:all .5s ease 0s;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0;
+  margin-top: 8px;
+  transition:all .5s ease 0s;
+}
+.nav-bar{
+	margin-top: 27px;
+}
+.navbar-toggle span{
+	color: #fff;
+}
+ul.nav{
+	margin: 0;
+	padding: 0;
+}
+.navbar-default .navbar-nav>li>a {
+ 	font-size: 24px;
+	color: #000;
+	text-transform: uppercase;
+	transition: all .7s ease 0s;
+	padding: 14px 15px;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #999;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+li a.active{
+	color: #42b3e5 !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  margin-top: 4px;
+}
