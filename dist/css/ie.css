@@ -423,15 +423,15 @@ body,
   background: #000 !important; }
 
 .carousel-caption h1 {
-  font-size: 157px;
+  font-size: 70px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 0; }
 
 .carousel-caption p {
-  font-size: 40px;
+  font-size: 25px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: bold;
   margin-top: 0; }
 
@@ -443,11 +443,11 @@ body,
   font-size: 30px;
   text-transform: uppercase;
   border: 0;
-  transition: all .5s ease 0s;
   -webkit-transition: all .5s ease 0s;
-  -moz-transition: all .5s ease 0s;
-  -o-transition: all .5s ease 0s;
-  -ms-transition: all .5s ease 0s; }
+  transition: all .5s ease 0s;
+  margin-top: 25px; }
+  .carousel-caption button a {
+    color: #fff !important; }
 
 .carousel-caption button:hover {
   background: #2a2a2a; }
@@ -507,7 +507,7 @@ responsive area
     font-size: 20px;
     padding: 14px 12px; }
   .carousel-caption h1 {
-    font-size: 120px; }
+    font-size: 50px; }
   .carousel-caption p {
     font-size: 32px; }
   .carousel-caption button {
