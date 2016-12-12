@@ -1,12 +1,13 @@
-// ==========================================================================
-// Header
-// ==========================================================================
-
 .top-header{
-	background: #1d3649 !important;
+	background: #fff !important;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
+
+	h1 {
+		text-transform: none;
+		padding-top: 20px;
+	}
 }
 .header-backup{
 	width: 20px;
@@ -18,6 +19,7 @@
 	margin-bottom: 15px;
 	margin-top: 0;
 	transition:all .5s ease 0s;
+
 }
 .navbar-default {
   background-color: transparent;
@@ -25,6 +27,7 @@
   margin-bottom: 0;
   margin-top: 8px;
   transition:all .5s ease 0s;
+
 }
 .nav-bar{
 	margin-top: 27px;
@@ -38,53 +41,26 @@ ul.nav{
 }
 .navbar-default .navbar-nav>li>a {
  	font-size: 24px;
-	color: #fff;
+	color: #000;
 	text-transform: uppercase;
 	transition: all .7s ease 0s;
+	-webkit-transition: all .7s ease 0s;
+	-moz-transition: all .7s ease 0s;
+	-o-transition: all .7s ease 0s;
+	-ms-transition: all .7s ease 0s;
 	padding: 14px 15px;
 	font-weight: bold;
-	cursor: pointer;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color: #42b3e5;
+	color: #999;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #000;
 }
 li a.active{
 	color: #42b3e5 !important;
-	cursor: default;
 }
 .navbar-default .navbar-toggle {
   border-color: #fff;
   margin-top: 4px;
-}
-
-
-.header-logo {
-	svg {
-		width: 110px;
-		height: auto;
-		fill: white;
-	}
-
-	a {
-		display: inline-block;
-	}
-
-	.header-info {
-		position: relative;;
-		top: -20px;
-		display: inline-block;
-		color: white;
-	}
-
-	.header-phone {
-		display: block;
-		font-size: 20px;
-	}
-
-	.header-location {
-		display: block;;
-	}
 }

@@ -14,10 +14,13 @@ h1, h2 {
   font-weight: bold; }
 
 .top-header {
-  background: #1d3649 !important;
+  background: #fff !important;
   position: fixed;
   width: 100%;
   z-index: 99999; }
+  .top-header h1 {
+    text-transform: none;
+    padding-top: 20px; }
 
 .header-backup {
   width: 20px;
@@ -51,48 +54,28 @@ ul.nav {
 
 .navbar-default .navbar-nav > li > a {
   font-size: 24px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
-  -webkit-transition: all .7s ease 0s;
   transition: all .7s ease 0s;
+  -webkit-transition: all .7s ease 0s;
+  -moz-transition: all .7s ease 0s;
+  -o-transition: all .7s ease 0s;
+  -ms-transition: all .7s ease 0s;
   padding: 14px 15px;
-  font-weight: bold;
-  cursor: pointer; }
+  font-weight: bold; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #42b3e5; }
+  color: #999; }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #000; }
 
 li a.active {
-  color: #42b3e5 !important;
-  cursor: default; }
+  color: #42b3e5 !important; }
 
 .navbar-default .navbar-toggle {
   border-color: #fff;
   margin-top: 4px; }
-
-.header-logo svg {
-  width: 110px;
-  height: auto;
-  fill: white; }
-
-.header-logo a {
-  display: inline-block; }
-
-.header-logo .header-info {
-  position: relative;
-  top: -20px;
-  display: inline-block;
-  color: white; }
-
-.header-logo .header-phone {
-  display: block;
-  font-size: 20px; }
-
-.header-logo .header-location {
-  display: block; }
 
 /*footer*/
 .footer-para {
@@ -259,7 +242,9 @@ body,
 
 /*contact section*/
 .contact-caption {
-  background: #3a9dca; }
+  background: #3a9dca;
+  max-width: 700px;
+  margin: 0 auto; }
 
 .contact-heading h2 {
   color: #fff;
@@ -422,36 +407,45 @@ body,
   padding: 0 !important;
   background: #000 !important; }
 
-.carousel-caption h1 {
-  font-size: 70px;
-  color: #fff;
-  text-transform: none;
-  margin-bottom: 0; }
-
-.carousel-caption p {
-  font-size: 25px;
-  color: #fff;
-  text-transform: none;
-  font-weight: bold;
-  margin-top: 0; }
-
-.carousel-caption button {
-  width: 240px;
-  height: 60px;
-  background: #3a9ecb;
-  color: #fff;
-  font-size: 30px;
-  text-transform: uppercase;
-  border: 0;
-  -webkit-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
-  margin-top: 25px; }
-  .carousel-caption button a {
+.carousel-caption {
+  position: absolute;
+  text-align: left;
+  left: 12%;
+  line-height: 1;
+  top: 0; }
+  .carousel-caption svg {
+    width: 350px;
+    margin-left: -28px;
+    fill: white; }
+  .carousel-caption h1 {
+    font-size: 70px;
+    color: #fff;
+    text-transform: none;
+    margin-bottom: 0;
+    margin-top: -20px; }
+  .carousel-caption p {
+    font-size: 25px;
+    color: #fff;
+    text-transform: none;
+    font-weight: bold;
+    margin-top: 0; }
+  .carousel-caption button {
+    width: 240px;
+    height: 60px;
+    background: #3a9ecb;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 0;
+    -webkit-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    margin-top: 25px; }
+    .carousel-caption button:hover {
+      background: #2a2a2a; }
+  .carousel-caption a {
     color: #fff !important; }
 
-.carousel-caption button:hover {
-  background: #2a2a2a; }
-
+.carousel-caption button
 .carousel-control {
   width: 5%; }
 
@@ -466,14 +460,6 @@ body,
 
 .item {
   position: relative; }
-
-.carousel-caption {
-  position: absolute;
-  text-align: left;
-  left: 12%;
-  line-height: 1;
-  top: 50%;
-  margin-top: -100px; }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
   font-size: 18px;
