@@ -6,14 +6,20 @@
 
 	h1 {
 		text-transform: none;
-		padding-top: 20px;
+
+		@include breakpoint(desktop) {
+			padding-top: 20px;
+		}
 	}
 }
 .header-backup{
-	width: 20px;
-	height: 119px;
-	background: transparent;
-	margin:auto;
+	height: 80px;
+	@include breakpoint(desktop) {
+		width: 20px;
+		height: 119px;
+		background: transparent;
+		margin:auto;
+	}
 }
 .top-header img.logo{
 	margin-bottom: 15px;
@@ -30,8 +36,15 @@
 
 }
 .nav-bar{
-	margin-top: 27px;
+	@include breakpoint(desktop) {
+		margin-top: 27px;
+	}
 }
+
+.navbar-default .navbar-toggle {
+	margin-right: -5px;
+}
+
 .navbar-toggle span{
 	color: #fff;
 }
@@ -63,4 +76,7 @@ li a.active{
 .navbar-default .navbar-toggle {
   border-color: #fff;
   margin-top: 4px;
+}
+.navbar-nav {
+	margin-left: -30px!important;
 }

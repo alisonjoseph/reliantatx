@@ -3,11 +3,24 @@
 .contact-caption{
 	background: #3a9dca;
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 0 auto!important;
+
+	@include breakpoint(desktop) {
+		margin-top: 120px!important;
+	}
 }
 .contact-heading h2{
+	font-size: 40px;
 	color: #fff;
-	font-size: 90px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	display: none;
+
+	@include breakpoint(desktop) {
+		display: block;
+		font-size: 90px;
+		margin-top: 50px;
+	}
 }
 .contact-info{
 	padding-left: 40px;
@@ -96,6 +109,14 @@
 }
 
 /*gmap*/
+
+.api-map {
+	display: none;
+	@include breakpoint(desktop) {
+		display: block;
+	}
+}
+
 #map{
 	height: 830px;
 }
@@ -103,6 +124,8 @@
 	position: relative;
 	overflow: hidden;
 }
+
+@include breakpoint(desktop) {
 .contact{
 	position: absolute;
 	width: 100%;
@@ -111,6 +134,7 @@
 	left: 0;
 	margin-top: -830px;
 	background: rgba(0, 0, 0, 0.51);
+}
 }
 .contact-caption{
 	margin-top: 120px;

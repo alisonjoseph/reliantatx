@@ -17,18 +17,32 @@
 	line-height: 1;
 	top: 0;
 
+
 	svg {
-		width: 350px;
-		margin-left: -28px;
 		fill: white;
+		width: 110px;
+		margin-lefT: -10px;
+		margin-top: -20px;
+
+		@include breakpoint(desktop) {
+			width: 350px;
+			margin-top: 0;
+			margin-left: -28px;
+		}
+
 	}
 
 	h1 {
-		font-size: 70px;
+		font-size: 30px;
 		color: #fff;
 		text-transform: none;
 		margin-bottom: 0;
-		margin-top: -20px;
+		margin-top: -10px;
+
+			@include breakpoint(desktop) {
+				font-size: 70px;
+					margin-top: -20px;
+			}
 	}
 
 	p {

@@ -6,10 +6,15 @@
 	margin-top: 40px;
 }
 .service h2{
-	font-size: 90px;
+	font-size: 40px;
 	color: #fff;
-	margin-top: 70px;
+	margin-top: 20px;
 	margin-bottom: 0;
+
+	@include breakpoint(desktop) {
+		font-size: 90px;
+		margin-top: 50px;
+	}
 }
 .service h4{
 	font-size: 24px;
@@ -20,25 +25,34 @@
 }
 .single-service{
 	text-align:center;
+
+	img {
+		max-width: 200px;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+	}
 }
-.single-service-img {
-  width: 205px;
-  height: 125px;
-  padding-left:30px;
-  position: relative;
-}
-.service-img {
-  width: 205px;
-  height: 125px;
-  background: #3a9ecb;
-  position: relative;
+@include breakpoint(desktop) {
+	.single-service-img {
+	  width: 205px;
+	  height: 125px;
+	  padding-left:30px;
+	  position: relative;
+	}
+	.service-img {
+	  width: 205px;
+	  height: 125px;
+	  background: #3a9ecb;
+	  position: relative;
+	}
+	.service-img img{
+		position: absolute;
+	}
 }
 .single-service h3{
 	margin-top: 10px;
 	color: #fff;
 	padding-bottom: 50px;
 	position:relative;
-}
-.service-img img{
-	position: absolute;
 }

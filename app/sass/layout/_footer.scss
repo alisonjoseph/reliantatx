@@ -1,5 +1,14 @@
 
 /*footer*/
+
+.footer {
+	padding-left: 20px;
+
+	@include breakpoint(desktop) {
+		padding-lefT: 0;
+	}
+}
+
 .footer-para{
 	margin: 0;
 	padding: 0;

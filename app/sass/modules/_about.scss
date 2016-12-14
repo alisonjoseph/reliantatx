@@ -1,14 +1,21 @@
 
 /*about area*/
+
 .about h2{
-	font-size: 90px;
+	font-size: 40px;
 	color: #42b3e5;
-	margin-top: 50px;
+	margin-top: 20px;
+
+	@include breakpoint(desktop) {
+		font-size: 90px;
+		margin-top: 50px;
+	}
 }
 .about h4{
 	font-size: 24px;
 	color: #737373;
 	margin-bottom: 45px;
+	padding: 0 20px;
 }
 .about-img img{
 	width: 100%;
